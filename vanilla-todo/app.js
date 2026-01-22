@@ -3,25 +3,25 @@ let todos = [];
 let nextId = 1;
 
 // DOM elements
-const form = document.getElementById('todo-form');
-const input = document.getElementById('todo-input');
-const list = document.getElementById('todo-list');
+const form = document.getElementById("todo-form");
+const input = document.getElementById("todo-input");
+const list = document.getElementById("todo-list");
 
 // THE PROBLEM: This re-renders the ENTIRE list every time
 function render() {
   // Clear everything and rebuild from scratch
-  list.innerHTML = '';
+  list.innerHTML = "";
 
-  todos.forEach(todo => {
-    const li = document.createElement('li');
-    li.className = todo.completed ? 'completed' : '';
+  todos.forEach((todo) => {
+    const li = document.createElement("li");
+    li.className = todo.completed ? "completed" : "";
 
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
     checkbox.checked = todo.completed;
-    checkbox.addEventListener('change', () => toggleTodo(todo.id));
+    checkbox.addEventListener("change", () => toggleTodo(todo.id));
 
-    const span = document.createElement('span');
+    const span = document.createElement("span");
     span.textContent = todo.text;
 
     li.appendChild(checkbox);
@@ -38,17 +38,17 @@ function addTodo(text) {
 
 // Toggle todo
 function toggleTodo(id) {
-  todos = todos.map(todo =>
-    todo.id === id ? { ...todo, completed: !todo.completed } : todo
+  todos = todos.map((todo) =>
+    todo.id === id ? { ...todo, completed: !todo.completed } : todo,
   );
   render(); // Re-renders ALL todos just to toggle one!
 }
 
 // Form submit
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (input.value.trim()) {
     addTodo(input.value.trim());
-    input.value = '';
+    input.value = "";
   }
 });
