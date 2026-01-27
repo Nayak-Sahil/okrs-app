@@ -9,7 +9,13 @@
 <body>
   <div class="container">
     <h1>Vanilla JS Todo</h1>
-    <p class="subtitle">Watch the DOM - entire list re-renders on every change!</p>
+
+    <div class="mode-switch">
+      <label>
+        <input type="checkbox" id="mode-toggle">
+        <span id="mode-label"></span>
+      </label>
+    </div>
 
     <form id="todo-form">
       <input type="text" id="todo-input" placeholder="Add a todo..." required>
@@ -18,7 +24,7 @@
 
     <ul id="todo-list"></ul>
 
-    <p class="hint">Open DevTools → Elements tab and watch the list nodes get replaced</p>
+    <p class="hint">Open DevTools → Elements tab and watch the DOM nodes</p>
   </div>
 
   <script src="app.js"></script>

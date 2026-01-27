@@ -70,3 +70,15 @@ li.completed span {
   font-size: 0.75rem;
   color: #999;
 }
+
+.mode-switch {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.mode-switch label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
