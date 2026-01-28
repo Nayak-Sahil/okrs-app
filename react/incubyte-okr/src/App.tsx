@@ -1,24 +1,14 @@
-import {useState} from "react";
-
-function App() {
-    const [counter, setCounter] = useState(0);
-    const showDecrement = counter > 0;
-
-    function incrementCounter() {
-        setCounter(counter + 1);
-    }
-
-    function decrementCounter() {
-        setCounter(counter - 1);
-    }
-
+export default function App() {
     return (
-        <div>
-            <p>counter: {counter}</p>
-            <button onClick={incrementCounter}>Increment Counter</button>
-            {showDecrement ? <button onClick={decrementCounter}>Decrement Counter</button> : null}
-        </div>
-    );
+        <form className={"w-[300px] h-[100px] border border-black flex flex-col"}
+              onSubmit={() => {
+              }}>
+            <input type="text" name={"objectives"} placeholder={"Enter a objectives"}/>
+            <input type="text" name={"key-result"}/>
+            <div className={"flex justify-between"}>
+                <button className={"bg-black text-white px-4 py-2"}>submit</button>
+                <button className={"bg-gray-400 px-4 py-2"}>clear</button>
+            </div>
+        </form>
+    )
 }
-
-export default App
