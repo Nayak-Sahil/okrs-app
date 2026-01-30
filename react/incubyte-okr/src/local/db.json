@@ -1,0 +1,189 @@
+{
+  "okrs": [
+    {
+      "id": 1,
+      "objective": "Create full stack project",
+      "keyResults": [
+        {
+          "id": 1,
+          "description": "Learn React",
+          "progress": "40%",
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "objective": "Improve database performance",
+      "keyResults": [
+        {
+          "description": "Optimize SQL queries",
+          "progress": "60%",
+          "isCompleted": false
+        },
+        {
+          "description": "Add database indexing",
+          "progress": "35%",
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "objective": "Enhance user authentication system",
+      "keyResults": [
+        {
+          "description": "Implement OAuth2",
+          "progress": "75%",
+          "isCompleted": false
+        },
+        {
+          "description": "Add two-factor authentication",
+          "progress": "50%",
+          "isCompleted": false
+        },
+        {
+          "description": "Setup LDAP integration",
+          "progress": "20%",
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "objective": "Launch mobile app",
+      "keyResults": [
+        {
+          "description": "Build iOS version",
+          "progress": "80%",
+          "isCompleted": true
+        },
+        {
+          "description": "Build Android version",
+          "progress": "75%",
+          "isCompleted": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "objective": "Improve API documentation",
+      "keyResults": [
+        {
+          "description": "Write endpoint documentation",
+          "progress": "85%",
+          "isCompleted": true
+        },
+        {
+          "description": "Create API examples",
+          "progress": "65%",
+          "isCompleted": true
+        },
+        {
+          "description": "Setup Swagger UI",
+          "progress": "90%",
+          "isCompleted": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "objective": "Implement CI/CD pipeline",
+      "keyResults": [
+        {
+          "description": "Setup GitHub Actions",
+          "progress": "70%",
+          "isCompleted": false
+        },
+        {
+          "description": "Configure automated testing",
+          "progress": "55%",
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "objective": "Reduce page load time",
+      "keyResults": [
+        {
+          "description": "Optimize image sizes",
+          "progress": "88%",
+          "isCompleted": true
+        },
+        {
+          "description": "Implement code splitting",
+          "progress": "45%",
+          "isCompleted": false
+        },
+        {
+          "description": "Enable caching strategy",
+          "progress": "72%",
+          "isCompleted": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "objective": "Expand team capabilities",
+      "keyResults": [
+        {
+          "description": "Hire two senior developers",
+          "progress": "30%",
+          "isCompleted": false
+        },
+        {
+          "description": "Conduct training sessions",
+          "progress": "50%",
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "objective": "Implement analytics dashboard",
+      "keyResults": [
+        {
+          "description": "Integrate Google Analytics",
+          "progress": "95%",
+          "isCompleted": true
+        },
+        {
+          "description": "Build custom dashboards",
+          "progress": "65%",
+          "isCompleted": false
+        },
+        {
+          "description": "Setup real-time monitoring",
+          "progress": "40%",
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "uuid": "550e8400-e29b-41d4-a716-446655440010",
+      "objective": "Migrate to microservices",
+      "keyResults": [
+        {
+          "uuid": "550e8400-e29b-41d4-a716-446655441001",
+          "description": "Design service architecture",
+          "progress": "55%",
+          "isCompleted": false
+        },
+        {
+          "uuid": "550e8400-e29b-41d4-a716-446655441002",
+          "description": "Deploy Docker containers",
+          "progress": "35%",
+          "isCompleted": false
+        },
+        {
+          "uuid": "550e8400-e29b-41d4-a716-446655441003",
+          "description": "Setup service mesh",
+          "progress": "15%",
+          "isCompleted": false
+        }
+      ]
+    }
+  ]
+}

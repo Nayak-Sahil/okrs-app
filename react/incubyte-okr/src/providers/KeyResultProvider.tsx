@@ -1,9 +1,9 @@
-import { createContext, useState } from 'react';
-import type { KeyResult } from '../types/okr_types.ts';
+import { createContext, type ReactNode, useState } from 'react';
+import type { KeyResultType } from '../types/okr_types.ts';
 
 type KeyResultContextType = {
-  keyResultList: KeyResult[];
-  setKeyResultList: (keyResultList: KeyResult[]) => void;
+  keyResultList: KeyResultType[];
+  setKeyResultList: (keyResultList: KeyResultType[]) => void;
 };
 
 export const KeyResultContext = createContext<KeyResultContextType>({
@@ -11,8 +11,8 @@ export const KeyResultContext = createContext<KeyResultContextType>({
   setKeyResultList: () => {},
 });
 
-const KeyResultProvider = ({ children }) => {
-  const [keyResultList, setKeyResultList] = useState<KeyResult[]>([]);
+const KeyResultProvider = ({ children }: { children: ReactNode }) => {
+  const [keyResultList, setKeyResultList] = useState<KeyResultType[]>([]);
 
   const outsourcedValues = {
     keyResultList,

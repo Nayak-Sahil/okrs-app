@@ -1,10 +1,14 @@
 import { ChartBar } from 'lucide-react';
 import { useContext, useState } from 'react';
-import type { KeyResult } from '../types/okr_types.ts';
+import type { KeyResultType } from '../types/okr_types.ts';
 import { KeyResultContext } from '../providers/KeyResultProvider.tsx';
 
 const KeyResultForm = () => {
-  const [keyResult, setKeyResult] = useState<KeyResult>({ description: '', progress: '' });
+  const [keyResult, setKeyResult] = useState<KeyResultType>({
+    description: '',
+    progress: '',
+    isCompleted: false,
+  });
   const { keyResultList, setKeyResultList } = useContext(KeyResultContext);
 
   return (
